@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<title>38 - HTML-CSS How to Create Website Layout in CSS</title>
+	</head>
+	<body>
+
+		<div class="grid">
+			<div class="title">Title</div>
+			<div class="header">Haeder</div>
+			<div class="sidebar">Sidebar</div>
+			<div class="content">
+				<p class="A">Content A</p>
+				<p class="B">Content B</p>
+				<p class="C">Content C</p>
+			</div>
+			<div class="footer">Footer</div>
+		</div>
+
+		<section class="Section-1">
+		 	<br>
+		 	<br>
+		 	<br>
+		 	<h1>38 - HTML-CSS How to Create Website Layout in CSS</h1>
+		 	<br>
+		 	<h3>01. We can use float to manipulate the position of sections of our website but we cannot for example move the footer to below the header when we want this webpage displayed on a mobile device. We can only move things to the left or right in the order that they appear in the HTML document. CSS grid fixes this issue by alllowing us to build a grid on our webpage and start inserting elements from our HTML file into the grid. It is an absolute must to be have a responsive website that works on mobile, tablet and desktop devices.</h3>
+		 	<img src="images/01_float.jpg">
+		 	<br>
+		 	<br>
+		</section>
+
+		<section class="Section-2">
+		 	<h3>02. To demonstrate CSS grid we start with a div container called grid. Inside the container we have 5 div boxes with CSS styling to alter the even and odd background colours so we can see what is happening.</h3>
+		 	<img src="images/02_Starting_code.jpg">
+		 	<br>
+		 	<br>
+		</section>
+
+		<section class="Section-3">
+		 	<h3>03a. In the CSS code we can specify that we want to use grid layout with the display:grid code.</h3>
+		 	<h3>03b. We can specift the number of columns in the grid with the grid-template-columns: code.</h3>
+		 	<h3>03c. When it is easy to imagine column 1 spanning between line 1 and 2 and column 2 spanning between lines 2 and 3.</h3>
+		 	<img src="images/03_grid-columns.jpg">
+		 	<br>
+		 	<br>
+		</section>
+
+		<section class="Section-4">
+		 	<h3>04. We also have various measurements to set the (column) fraction widths.</h3>
+		 	<img src="images/04_Column_width.jpg">
+		 	<br>
+		 	<br>
+		</section>
+
+		<section class="Section-5">
+		 	<h3>05. We call the div boxes inside the grid "grid items" and we can decide how much space they should take up inside our grid. In this example we have renamed the div items and given them a class. We can specify where these grid items start and end. For this example we have the title spanning the whole width of the page from line 1 to line 3.</h3>
+		 	<h3>05a. We can write this as two lines of code or as one specifying the first and last line seperated by a slash.</h3>
+		 	<h3>05b. We can write this as two lines of code or as one specifying that the column ends spanning two fractions. </h3>
+		 	<img src="images/05_grid_line_start.jpg">
+		 	<br>
+		 	<br>
+		</section>
+
+		<section class="Section-6">
+		 	<h3>06. In the same way that we can modify the columns that a grid item occupies we can also modify the rows. In this example the grid item title spans 1 column and ends at row 2. </h3>
+		 	<img src="images/06_Grid_row_end.jpg">
+		 	<br>
+		 	<br>
+		</section>
+
+		<section class="Section-7">
+		 	<h3>07. There is a much easier way of doing this without using columns and rows. This is called grid area.</h3>
+		 	<h3>07a. We define first the number of columns and rows using grid-template-columns and grid-template-rows.</h3>
+		 	 <h3>07b. We next give a grid-area name to each class.</h3>
+		 	 <h3>07c. Lastly we drop each class into the grid area with grid-template-areas code line. Note that the last line of the code has the semi-colon.</h3>
+		 	<img src="images/07_Grid_area.jpg">
+		 	<br>
+		 	<br>
+		</section>
+
+		<section class="Section-8">
+		 	<h3>08. We can also add in a blank space or white space using a dot in the grid-template-areas.</h3>
+		 	<img src="images/08_White_space.jpg">
+		 	<br>
+		 	<br>
+		</section>
+
+		<section class="Section-9">
+		 	<h3>09. At the moment the website spans the whole width of the page but we can also add a wrapper using CSS grid.</h3>
+		 	<img src="images/09_wrapper.jpg">
+		 	<br>
+		 	<br>
+		</section>
+
+		<section class="Section-10">
+		 	<h3>09. We can also set the width of each grid item so that the it does not occupy the whole width of the grid column but only what it needs. We can see that with a justify-self: start; will justify to the left so the grid box is only as wide as the content. Equally we can use justify-self: end; to justify right. Also available is justify-self: center;</h3>
+		 	 <h3>09a. To centre content vertically in the css grid we can use align-self: Start, end or center;</h3>
+		 	<img src="images/10_Justify_self.jpg">
+		 	<br>
+		 	<br>
+		</section>
+
+		<section class="Section-11">
+		 	<h3>11. Nested items. Below we have an example of nested items in the HTML file. We can see that the row height adjusts for the nested items but it also adjusts all the other row heights to be the same. </h3>
+		 	<img src="images/11_Nested_content.jpg">
+		 	<br>
+		 	<br>
+		</section>
+
+		<section class="Section-12">
+		 	<h3>12. We can put the nested items in another grid withing the content box. </h3>
+		 	<img src="images/12_Nested_content_grid.jpg">
+		 	<br>
+		 	<br>
+		</section>
+
+		<section class="Section-13">
+		 	<h3>13. Mobile responsiveness.</h3>
+		 	<img src="images/13_Responsive.jpg">
+		 	<br>
+		 	<br>
+		</section>
+
+		<section class="Section-13">
+		 	<h3>13. grid-gap allows us to ad spacing round the grid items. I have added it to the mobile version as we want it both on the mobile and desktop version. Note that on the CSS code for the desktop version I only need to code what changes when the screen size is greater than 736px.</h3>
+		 	<img src="images/14_grid-gap.jpg">
+		 	<br>
+		 	<br>
+		</section>
+
+
+
+
+	</body>
+</html>
+
+
+		

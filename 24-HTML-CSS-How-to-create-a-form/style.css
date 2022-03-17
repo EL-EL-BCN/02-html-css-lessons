@@ -1,0 +1,55 @@
+
+form {
+	width: 300px;
+}
+
+input {
+	width:100%;
+	margin-bottom: 10px;
+}
+
+textarea {
+	margin: 10px 0 10px 0;
+	width: 100%;
+	resize: vertical;
+	max-height: 100px;
+}
+
+input, textarea, select {
+	outline: none;
+	border: 1px solid #ddd;
+	padding: 5px;
+}
+
+input:focus, textarea:focus {
+	box-shadow: 0 0 4px rgba(255, 0, 0, 0.5);
+	border: 1px solid #ddd;
+	padding: 5px;
+}
+
+.gender input {
+	margin: 5px 5px 20px 20px;
+	width: 7%;
+}
+
+button {
+	padding: 10px;
+	margin:20px;
+	float: right;
+}
+
+::placeholder {
+	color: red;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: red;
+	opacity: 1;
+}
+
+::-ms-input-placeholder {
+	color: red;
+	opacity: 1;
+}
+

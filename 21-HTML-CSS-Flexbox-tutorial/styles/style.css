@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 100%;
+	height:500px;
+	background-color: #ccc;
+	/* display:Flex means we want to use flex boxes. By default it will create a box for each item horizontally as columns.*/
+	display: flex;
+
+
+	/* flex: wrap means that we wrap the contents of each item within the flex boxes.*/
+	flex-wrap: wrap;
+	/* flex: direction means we want to wrap rows so if there is too much content for the row then it will push a box down to the next row.*/
+	flex-direction: row;
+	/* flex-wrap and Flex-direction: can be summarised into a onle line css code called flex-flow. */
+	flex-flow: row wrap;
+
+
+	/* Justify-content allows us to justify each flexbox. */
+	/*center - it will take all the flexboxes on each row and move them to the centre.*/
+	/*space-around - will centre each flexbox with space around so that all flexboxes on a row have equal space to the left and right and in between.*/ 
+	/*space-between will push the flexboxes to the edges of the browser leaving equal space between boxes.*/
+	/*flex-end - Will justify all boxes to the right or end of the page.*/
+	/*flex-start - Will justify all boxes to the left or start of the page.*/
+	/*space-evenly - will give left and right spaces evenly to all flexboxes.*/
+	justify-content: space-between;
+
+
+	/*Align-items will decide how the individual items will be positioned in the container in the horizontal plane or as within thier columns.*/
+	/*flex-start - is the default and all the items will be aligned at the start.*/
+	/*flex-end - will push the content of each flex box to the end.*/
+	/*flex-end - will push the content of each flex box to the end.*/
+	/*flex-center - places the content in the center of each flexbox.*/
+	/*stretch - places the content in the center of each flexbox.*/
+	/*baseline - will centre the content horizontally based on the tallest flexbox content.*/
+	align-items: flex-start;
+
+	/*align-content will decide how the individual items will be positioned in the container in the vertical plane or as within thier rows. The options are: Flex-start, flex-end, flex-centre, space-between etc.*/ 
+	align-content: space-between;
+}
+
+/*We can chose the order that the items appear using order: x;. if I set the fist item class to item2 in the HTML it will now appear as tle last flex box and not the first.*/ 
+.item {
+	order: 2;
+	background-color: red;
+	flex: 0 1 200px;
+}
+
+.item2 {
+	order: 1;
+	background-color: green;
+	flex-basis: 100%;
+}
+
+/*Flex-grow: 1; or flex-grow: 2; can be used to determine how much a flexbox is allowed to grow. Alternatively flex-shrink determines how much a flex box can shrink.*/
+
+/*Flex-basis: 30%; saxs that each flex box will occupy 30% of the width. so if we shrink the width of the page then it will always maintain 3 columns spilling over the content within each flexbox onto another line.*/
+
+/*We can combine flex-grow, flex-shrink and flex-basis in one line fo code. i.e. flex: 0 1 100px; where 0 is flex grow, 1 is flex shrink, and 100px is flex-basis.*/
+
+
+
+

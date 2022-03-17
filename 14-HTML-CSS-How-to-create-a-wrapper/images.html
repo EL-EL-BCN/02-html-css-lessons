@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>15 - HTML-CSS How to insert images</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="styles/style-menu-bar.css">
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html" target="_blank">Home</a></li>
+				<li><a href="menu-bar.html" target="_blank">Create a menu</a></li>
+				<li><a href="wrapper.html" target="_blank">Create a Wrapper</a></li>
+				<li><a href="images.html" target="_blank">Insert Images</a></li>
+				<li><a href="videos.html" target="_blank">Create/embed HTML5 Videos</a></li>
+			</ul>
+		</nav>
+		<div class="wrapper">
+				<!-- This is a comment -->
+		<h1>15 - HTML-CSS How to insert images</h1>
+		<p>In this lesson we are going to learn how to insert images into a website using two methods.</p>
+		<p>Method 1 - only using HTML</p>
+		<p>15. we use an img tag, specifying the folder and filename</p>
+
+		<img src="images/15_Insert_image_HTML_only.jpg">
+		<br>
+		<br>
+		<p>16. We add an alt tag to make the image searchable on search engines such as google</p>
+
+		<img src="images/16_Insert_image_HTML_only.jpg" alt="HTML img tag">
+		<br>
+		<br>
+
+		<p>Method 2 - Using HTML & CSS</p>
+		<p>17. with CSS we can modify the characteristics of the image.</p>
+
+		<img src="images/17-Example_image.jpg">
+		<br>
+		<br>
+		<p>18. Note that the image above is huge and takes up too much space.</p>
+		<p>18a. first we add a class to the image. then define the width in CSS code.Note that we do not need to add a height becuase it scales automatically with the width.</p>
+		
+		<img src="images/18_CSS_and_HTML.jpg">
+		<img class="img-ex" src="images/17-Example_image.jpg" alt="HTML img tag">
+		<br>
+		<br>
+		<p>19a. To add a background image we use a div class but we do not specify the image source in HTML. we do it in the CSS.</p>
+		<p>19b. Note that the image is repeated till it fills the specified box of 1200 x 1600px.</p>
+
+		<img src="images/19_CSS_and_HTML.jpg">
+		<div class="image"></div>
+		<br>
+		<br>
+		<p>20a. Now I have reduced the sixe of the container to 500px x 330px when the image is larger at 670px x 450px</p>
+		<p>20b. Here by setting the background size to 100% the image should scale within the div container.</p>
+
+		<img src="images/20_CSS_and_HTML.jpg">
+		<div class="image2"></div>
+		<br>
+		<br>
+		<p>21a. With reduced container size of 500px x 330px when the image is larger at 670px x 450px</p>
+		<p>21b. If we set the image sixe to 50% then it will duplicate the image to fill the container.</p>
+		<img src="images/21_CSS_and_HTML.jpg">
+		<div class="image3"></div>
+		<br>
+		<br>
+		<p>22a. With reduced container size of 500px x 330px when the image is larger at 670px x 450px</p>
+		<p>22b. we set the background-size: contain; to the CSS and the image is always contained in the box.</p>
+		<img src="images/22_CSS_and_HTML.jpg">
+		<div class="image4"></div>
+		<br>
+		<br>
+		<p>23a. With reduced container size of 500px x 165px when the image is larger at 670px x 450px</p>
+		<p>23b. we set the background-size: cover; to the CSS and the image will always cover the entire size of the box.Note that because the dimensions of this new box are slimmer in height the image is being cropped on the bottom.</p>
+		<img src="images/23_CSS_and_HTML.jpg">
+		<div class="image5"></div>
+		<br>
+		<br>
+		<p>24a. With reduced container size of 500px x 165px when the image is larger at 670px x 450px</p>
+		<p>24b. we set the background-size: cover; to the CSS and the image will always cover the entire size of the box. Now we can add an aditional line of CSS to centre the image vertically, cropping the top and bottom of the image. Instead of centre we could also use left, right, top or bottom to possition the image within the box.</p>
+		<img src="images/24_CSS_and_HTML.jpg">
+		<div class="image6"></div>
+		<br>
+		<br>
+		<p>25a. With reduced container size of 500px x 330px when the image is larger at 670px x 450px</p>
+		<p>25b. If we set the image sixe to 50% then it will duplicate the image to fill the container unless we use background-repeat: no-repeat;.</p>
+		<img src="images/25_CSS_and_HTML.jpg">
+		<div class="image7"></div>
+		<br>
+		<br>
+		<p>26a. With reduced container size of 300px x 165px when the image is larger at 670px x 450px</p>
+		<p>26b. we set the background-size: cover; to the CSS and the image will always cover the entire size of the box. Now we can add an aditional line of CSS to centre the image vertically, cropping the top and bottom of the image. Instead of centre we could also use left, right, top or bottom to possition the image within the box. we can also add a second perameter to background position such as left. This will align left and centre vertically. Note I have set the image size to 200% to demonstrate this clearly.</p>
+		<img src="images/26_CSS_and_HTML.jpg">
+		<div class="image8"></div>
+		<br>
+		<br>
+		<p>27a. With reduced container size of 300px x 165px when the image is larger at 670px x 450px</p>
+		<p>27b. We can also use CSS to add an action to the image. In this example when I hover over the image I change the image sixe from the 200% to 100%.</p>
+		<img src="images/27_CSS_and_HTML.jpg">
+		<div class="image9"></div>
+		<br>
+		<br>
+		</div>
+		
+	<body>
+</html>

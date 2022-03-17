@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>07 - HTML-CSS CSS stylesheet in HTML</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<!-- we can add a href to an element that contains a link to a seperate part of the page. we gove the seperate part of the page an ID tag and use the hash to identify that ID -->
+		<a href="#courses">Go to the courses information link</a>
+		<br>
+
+		<!-- These elements are individually styles by the same class tag of index-h2. -->
+		<h2 class="index-h2">This is title number 1</h2>
+		<p class="index-h2">This is the text content 1</p>
+
+		<!-- These elements are colectively styled by the same class tag of index-p. -->
+		<div class="index-p">
+			<h2>This is the title number 2</h2>
+			<p>This is the text content number 2</p>
+		</div>
+
+		<!-- These elements use dive class called test. I then have a seperate stlye for div class test p so that this is only applied to the paragraphs. -->
+		<div class="test">This is title number 3
+		<p>This is the text content 3a</p>
+		<p>This is the text content 3b</p>
+		<p>This is the text content 3c</p>
+		<p>This is the text content 3d</p>
+		</div>
+
+		<!-- These elements use ID tags to have an individual styling applied in the CSS stylesheet. Only one ID tag per element is allowed. -->
+		<div class="id-tags" id="id-001">This is title number 4
+		<p id="id-002">This is the text content 4a</p>
+		<p id="id-003">This is the text content 4b</p>
+		<p id="id-004">This is the text content 4c</p>
+		<p id="id-005">This is the text content 4d</p>
+		</div>
+
+		<div class="courses" id="courses">This section is about courses.
+		<p>This is the text content for courses 5a</p>
+		<p>This is the text content for courses 5b</p>
+		<p>This is the text content for courses 5c</p>
+		<p>This is the text content for courses 5d</p>
+		</div>
+
+	</body>
+</html>

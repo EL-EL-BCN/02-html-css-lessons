@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #eee;
+}
+
+nav {
+	width: 100%;
+	height: 100px;
+	background-color: #fff;
+}
+
+ul {
+	margin-left: 40px
+
+}
+
+ul li {
+	list-style:none;
+	display: inline-block;
+	float: left;
+	line-height: 100px;
+}
+
+ul li a{
+	display: block;
+	text-decoration:none;
+	font-family: arial;
+	font-size: 30px;
+	font-color: #1e1e1e;
+	padding: 0 20px;
+}
+
+ul li a:hover {
+	color: red;
+}
+
+.wrapper {
+	margin: 0 auto 0 60px;
+	width:1200px;
+
+.h1 {
+    font-family: "times-new-roman";
+    font-size: 50px;
+    text-align: left;
+}
+
+.h2 {
+    font-family: "times-new-roman";
+    font-size: 40px;
+    text-align: left;

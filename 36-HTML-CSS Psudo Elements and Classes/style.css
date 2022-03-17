@@ -1,0 +1,137 @@
+
+/*PSEUDO CLASSES*/
+
+/*:Root {
+	 color: red; 
+}*/
+
+/* The root element is the HIGHEST element in the whole HTML document. so if I apply a color:red; Then all text elements will be coloured red. */
+
+* h1:hover {
+	color: red;
+}
+
+/* When I use H1:hover, A mouse over any H1 element will turn red because the H1 class has been set to do this. Eqqually I can apply other stylings such as padding or font-size.*/
+
+/*:hover {
+	color: blue;
+}*/
+
+/* When I use just :hover, A mouse over any element will turn all elements blue. */
+
+/*a:active {
+	color: green;
+	font-size: 24px;
+	font-weight: bolder;
+}*/
+
+/* The pseudo class active can be used to change the properties of an element when clicked. In this example we change all anchor tags to color; green; font-size: 24px; and font-weight: bolder; */
+
+a:visited {
+	color: red;
+}
+
+/* The pseudo class visited can be used to change and retain the stylings of an element when clicked. In this example we change all anchor tags to color; red; */
+
+/*.list-example-1 p:last-child {
+	color: blue;
+}*/
+
+/* last child pseudo class will change the stylings of the last element under the parent class of list-example-1. In this case the last paragraph should be blue. */
+
+/*.list-example-2 p:nth-child(2) {
+	color: pink;
+}*/
+
+/*Nth Child so what we can do here is change the nth child where we specify the nth number in brackets. In this case the 2nd child of each list example-2 parent element will be changed to pink.      */
+
+/*.list-example-2 p:nth-child(even) {
+	color: pink;
+	font-weight: bolder;
+}*/
+
+/*.list-example-2 p:nth-child(odd) {
+	color: blue;
+	font-weight: bolder;
+}*/
+
+/*We can also use Nth Child to specify odd and even childs.*/
+
+.list-example-1 p:nth-child(3n+0) {
+	color: blue;
+	font-weight: bolder;
+}
+
+.list-example-2 p:nth-child(3n+1) {
+	color: pink;
+	font-weight: bolder;
+}
+
+/*Nth child can be used to style every third paragraph starting from paragraph zero. See list example 1. Here we see we can count 0,1,2 then on three the modified styling is applied. we count 3, 4, 5 and on 6 we also apply modified styling. This time we change the colour to blue.*/
+
+/*If we set nth child to (3n+1) then we modify 1. Skip 2 and 3 and modify 4 etc.*/
+
+/*By using this we can tell how often to modify and where to start.*/
+
+
+/* PSEUDO ELEMENTS */
+
+.element-1::first-line {
+	background-color: yellow;
+	color: red;
+}
+
+/* We can style an element of a class by using PSEUDO element. A pseudo element is denoted by a double colon (::). In this example we give styling to the first line of class named element-1. */
+
+.element-1::first-letter {
+	background-color: green;
+	color: white;
+}
+
+/* We can also style the first letter. */
+
+.element-3::selection {
+	background-color: green;
+	color: blue;
+}
+
+/* We can apply styling to an element only when we mouse over and slect part of it. */
+
+/* .element-4::before {
+	content: "This is text inserted before - ";
+}*/
+
+/* We can inser content before or after an element. In this case we are inserting text.*/
+
+
+/*.element-4::before {
+	content: attr(href);
+}*/
+
+/* We can inser content before or after an element. In this case we are inserting an attribute which is the href. */
+
+/*.element-4::before {
+	content: attr(class);
+}*/
+
+/* We can insert content before or after an element. In this case we are inserting an attribute which is the class. */
+
+/*.element-4::before {
+	content: attr(daniel);
+}*/
+
+/* We can also use any attribute we have made up in the HTML file */
+
+/*.element-4::before {
+	content: url(images/17_TEST_IMAGE.jpg);
+}*/
+
+/* We can also insert images before the element */
+
+.element-4::after {
+	content: url(images/17_TEST_IMAGE.jpg);
+}
+
+/* We can also do an insert content after, in this case I chose to inser an image but it will work for text, atribute etc.*/
+
+

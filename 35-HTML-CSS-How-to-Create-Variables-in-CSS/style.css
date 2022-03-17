@@ -1,0 +1,18 @@
+:Root {
+	--text-color: red;
+}
+
+.section-one {
+	--font-size: 24px;
+}
+
+.section-one p {
+	color: var(--text-color);
+	font-size: var(--font-size);
+}
+
+.section-two p {
+	font-size: var(--font-size);
+}
+
+

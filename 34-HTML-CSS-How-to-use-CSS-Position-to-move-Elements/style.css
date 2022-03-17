@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.move-me {
+	width:100%;
+	height:100px;
+	background-color: blue;
+	position: sticky;
+	position: -webkit-sticky; 
+	/* we can add webkit for browsers that do not support position sticky.*/
+	top: 100px;
+	left: 0px;
+}
+
+.section-1 {
+	width:100%;
+	height:200px;
+	background-color: #ccc;
+	/* z-index: 1000; */
+	padding-top: 100px;
+}
+
+.section-2 {
+	width:50%;
+	height:200px;
+	background-color: #aaa;
+	/* z-index: 500; */
+}
+
+

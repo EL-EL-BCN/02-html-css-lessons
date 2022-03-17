@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>16 - HTML-CSS How to create and embed HTML5 videos</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="styles/style-menu-bar.css">
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html" target="_blank">Home</a></li>
+				<li><a href="menu-bar.html" target="_blank">Create a menu</a></li>
+				<li><a href="wrapper.html" target="_blank">Create a Wrapper</a></li>
+				<li><a href="images.html" target="_blank">Insert Images</a></li>
+				<li><a href="videos.html" target="_blank">Create/embed HTML5 Videos</a></li>
+			</ul>
+		</nav>
+		<div class="wrapper">
+				<!-- This is a comment -->
+		<h1>16 - HTML-CSS How to create and embed HTML5 videos</h1>
+		<p>In this lesson we are going to learn how to create and embed HTML5 videos into a website using two methods. Method 1 - linking to a video file in our root folder. Method 2 - Embedding a video from another online website.</p>
+		<h2> Method 1 - linking to a video file in our root folder.</h2>
+		<p>First we need to learn how to include a video in our root folder. We have a wrapper on our page which will contain our video. When it comes to browser support all Modern day browsers (HTML5) should support MP4 video file formats. Before this we had to use flash on our websites because we did not have native support.</p>
+
+		<p>28. Create a folder called videos in our root folder then drop a MP4 video file in it.</p>
+		<img src="images/28_Video_folder.jpg">
+
+		<p>29a. To add a video we use a video tag in HTML.</p>
+		<p>29b. autoplay means that the video will autoplay once the user enters the page.</p>
+		<p>29c. controls means that the video will have control buttons such as pause, skip ahead etc.</p>
+		<p>29d. poster is a thumbnail for the video if you want to select your own. when the video has a thumbnail it is displayed until the video is clicked on then the video starts to auto play.</p>
+		<img src="images/29_html_video_tag.jpg">
+		<video src="videos/Playing_cat.mp4" autoplay controls poster="videos/Playing_cat_thumbnail.jpg"></video>
+		<br>
+		<br>
+		<p>30a. lets say we did not use an MP4 video and we want to let the user know that it is not supported in the browser.</p>
+		<p>30b. We can add more HTML code to specify the type of video file such as avi. We can also add an error mesaage if the video does not display.</p>
+		<img src="images/30_html_video_tag.jpg">
+		<br>
+		<video autoplay controls>
+			<source src="videos/Playing_catAVI.avi" type="video/avi">
+			your browser does not support mp4 videos. change browser!
+		</video>
+		<br>
+		<br>
+		<p>31a. At the moment the mp4 video is very large but we can solve this in the CSS style sheet.</p>
+		<p>31b. We can either use a generic format for all video tags in the HTML file or assign a class to each tag.</p>
+		<p>31c. Note that we have used width: 100%; so the video now shows within the wrapper container.</p>
+		<img src="images/31_CSS_format_video.jpg">
+		<video class="video" src="videos/Playing_cat.mp4" autoplay controls poster="videos/Playing_cat_thumbnail.jpg"></video>
+		<br>
+		<br>
+		<h2> Method 2 - Embedding a video from another online website.</h2>
+		<p>32a. Video files can be very large so they could take up a lot of space on our server. It might be worth storing them ofline on a website such as youtube or vimeo and embedding them in our website.</p>
+		<p>32b. To do this in a youtube video we select the share button at the bottom of video then select the code symbol which gives us a pop up menu where we can select the options we want to use for the video. When we have selected the options we want we copy which takes the code at the top. </p>
+		<img src="images/32_Embed_video_options.jpg">
+		<br>
+		<br>
+		<p>32c. we can drop the coppied code as is into our HTML and the video will show. </p>
+		<img src="images/32_Embed_video_HTML_From_youtube.jpg">
+		<br>
+		<br>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/OOy764mDtiA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<br>
+		<br>
+		<p>33a. One problem of using iframes is that it scales automatically. To control this we can wrap the iframe in another container with a class. we remove all the styling from the HTML and then add some very specific CSS code.</p>
+		<br>
+		<br>
+		<img src="images/33_Code_for_full_size_embed.jpg">
+		<br>
+		<br>
+		<p>33b. We use a position relative on the wrapper class so we can correctly dimension our full screen video box. position is a means to move around elements on our website. we should not use it unless we have a specific purpose as it may mess up our website.</p>
+		<p>33c. We add a padding to the wrapper bottom of 56.25%. This is the percentage notation for a 16:9 video ratio.</p>
+		<p>33d. We add 25px of padding top and height of 0px.</p>
+		<p>33e. Now we add a iframe sytylig to the container using position absolute. This is why we needed a position relative above in the container.</p>
+		<p>33f. Now we can define the left, top, right and bottom to fit exactly within the container.</p>
+		<p>33g. Finally, we specift that we want the width and height to be 100% so it completely fills the video wrapper.</p>
+		<p>33h. Now bellow we can see that the video completely fills the container.</p>
+		<br>
+		<br>
+		<div class="WrapperVideo">
+		<iframe src="https://www.youtube.com/embed/OOy764mDtiA" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<br>
+		<br>
+		<p>34a. Note that if we change the width of the page wrapper from 1000px to 80%, when we cange the browser window size, the video automatically scales as well. </p>
+		<br>
+		<br>
+		<img src="images/34_Responsive.jpg">
+		<br>
+		<br>
+		</div>
+	<body>
+</html>

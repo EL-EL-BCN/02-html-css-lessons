@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>35 - HTML-CSS How to Create Variables in CSS</title>
+			<link rel="stylesheet" href="style.css">
+		</head>
+		<body>
+			<div class="section-one">
+				<h2>This is a title</h2>
+				<p>This is a paragraph</p>
+					<div class="textbox">
+						<p>random text</p>
+					</div>
+			</div>
+
+			<div class="section-two">
+				<h2>This is another title</h2>
+				<p>This is another paragraph</p>
+			</div>	
+	
+			<section>
+				<br>
+				<br>
+				<h1>35 - HTML-CSS How to Create Variables in CSS</h1>
+				<br>
+				<h3>01. CSS variable is something new inside CSS. A variable is a type of container that we can asign a value to. So if we have a huge website and we have a specific colour that we use for all the text. If later on we want to change the colour of this text then instead of going through the style sheet and having to change it in many places we can asign a vairable and change it in just one place.</h3>
+				<h3>01a. Below is the starting HTML code.</h3>
+				<img src="images/01_Starting_code.jpg">
+				<br>
+				<br>
+				<h3>02. We can create psudo element to refer to a specific thing inside the website. For example we can create a psudo element called root. The root is the highest level in the HTML document that we have. By selecting the root we set the level to one higher than the HTML tag which is the highest tag in the HTML document. We can only style a child of an element so by setting it at the highest level anything inside the document can be affected.</h3>
+				<h3>02a. We define the psudo element with a colon (:) The psudo tag is identified by a double dash. We then give it a unique name that can be anything. If we want to use two words then we caan seperate them by a dash.</h3>
+				<img src="images/02_Root.jpg">
+				<br>
+				<br>
+				<h3>03. So now if I want to apply the styling to any element inside my website I can select it and apply the psudo tag variable. </h3>
+				<h3>03a. Same as before we highlight the element that we want to style with class or tag type or both. we chose what we want to style, for example colour, then instead of a value we add a variable in brackets and refer to the variable that we created earlier.</h3>
+				<img src="images/03_Variable.jpg">
+				<br>
+				<br>
+				<h3>04. We can use this psudo element tag variable to style multiple elements inside the HTML file. </h3>
+				<h3>04a. Now if we want to change the text colour of all the elements on the page we just change it at the top in the tag. </h3>
+				<img src="images/04-modify-variable.jpg">
+				<br>
+				<br>
+				<h3>05. We can also create a variable in a class.</h3>
+				<h3>05a. As anything in that class is a child of the class then we can apply that variable to child elements. for example P tags within section-one are child elements of the div class of section-one.</h3>
+				<img src="images/05-child_variable.jpg">
+				<br>
+				<br>
+				<h3>06. What we cannot do is use the variable in sectio-one class to style an element outside of section-one class because it is not a child..</h3>
+				<h3>06a. So if I try to apply the variable text-size from section-one class to an element in section-two it will not work.</h3>
+				<img src="images/06_Child-varible2.jpg">
+				<br>
+				<br>
+			</section>
+		</body>
+
+
+	</html>

@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>36 - HTML-CSS Psudo Elements and Classes</title>
+			<link rel="stylesheet" href="style.css">
+		</head>
+		<body>
+			
+			<h1>This is a header</h1>
+
+			<a href="index.html">This is a link to the same page!</a>
+
+			<br><br>
+
+			<div class="list-example-1">
+				<p>Paragraph 1</p>
+				<p>Paragraph 2</p>
+				<p>Paragraph 3</p>
+				<p>Paragraph 4</p>
+				<p>Paragraph 5</p>
+				<p>Paragraph 6</p>
+			</div>
+
+			<br>
+
+			<div class="list-example-2">
+				<p>Paragraph 1</p>
+				<p>Paragraph 2</p>
+				<p>Paragraph 3</p>
+				<p>Paragraph 4</p>
+				<p>Paragraph 5</p>
+				<p>Paragraph 6</p>
+			</div>
+
+			<br>
+
+			<p class="element-1">This is a "::first-line" example.</p>
+			<p class="element-2">This is a "::first-letter" example.</p>
+    		<p class="element-3">This is a "::selection" example.</p>
+    		<a class="element-4" href="index.html" daniel="My name"> - This is a "::before" and "::after" example.</a>
+	
+			<section>
+				<br>
+				<br>
+				<h1>36 - HTML-CSS Psudo Elements and Classes</h1>
+				<br>
+				<h3>01. There are a lot of psudo elements that can be used in CSS. Here I will demonstrate a few of the most common used ones. Below is the starting HTML code.</h3>
+				<img src="images/01_Starting-code.jpg">
+				<br>
+				<br>
+				<h3>02. A psudo Element is a way for us to style a specific part of an element. A list of all the psudo elements can be found at:</h3>
+				<a class="explain" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements" target="_blank"> Link to list of Pseudo Elements</a><br>
+				<h3>02a. A psudo class changes the state of a specific element when we hover on it.</h3>
+				<a class="explain" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blank"> Link to list of Pseudo Classes</a><br>
+				<h3>02b. Here is a list of content property.</h3>
+				<a class="explain" href="https://www.w3schools.com/cssref/pr_gen_content.asp" target="_blank">Link to Content property styling</a><br>
+				<br>
+				<br>
+				<h3>03. Root is the highest element class on a document.</h3>
+				<img src="images/03_Root.jpg">
+				<br>
+				<br>
+				<h3>04. Class hover. IN this example the psudo class is applied to all H1 elements. We can use psuedo styling to any element on a website such as DIV, SECTION, A or P etc...</h3>
+				<img src="images/04_Class_hover.jpg">
+				<br>
+				<br>
+				<h3>05. HOVER. In this example the psudo class is applied to all elements.</h3>
+				<img src="images/05_hover.jpg">
+				<br>
+				<br>
+				<h3>06. we can do anything to an element with a pseudo class. In this example when the header is hovered over, it is given padding and font-size stylings.</h3>
+				<img src="images/06_Hover_more_stylings.jpg">
+				<br>
+				<br>
+				<h3>07. ACTIVE. We can use a psudo class to change a certain type of element when clicked. In this example we change the font size, colour and weight. Note that the changes are only visible when we hold the click. Once we let go the element reverts back to it´s original stylings.</h3>
+				<img src="images/07_active.jpg">
+				<br>
+				<br>
+				<h3>08. VISITED. This is similar to active however the element retains its new stylings once we let go of the click.</h3>
+				<img src="images/08_visited.jpg">
+				<br>
+				<br>
+				<h3>09a. LAST CHILD will change the last child element under the parent class element. In this example we change the last child colour to blue. </h3>
+				<h3>09b. NTH CHILD. we can specify the child to be changed in brackets. </h3>
+				<img src="images/09_last_child_nth_child.jpg">
+				<br>
+				<br>
+				<h3>10. NTH CHILD can be used to style even and odd children of a class. </h3>
+				<img src="images/10_nth_child_even_odd.jpg">
+				<br>
+				<br>
+				<h3>11. NTH child can also be used to modify every 3 or 4 etc children and we can also specify when to start counting. </h3>
+				<img src="images/11_nth_child_3n_plus_zero.jpg">
+				<br>
+				<br>
+				<h3>12. All the above are examples of PSUDO CLASSES. PSEUDO ELEMENTS can change something inside an element. They are denoted by a double colon.</h3>
+				<img src="images/12_PSEUDO_ELEMENT_first_line.jpg">
+				<br>
+				<br>
+				<h3>13. We can add more than one pseudo element to one pseudo class. Using the two examples above.</h3>
+				<img src="images/13_PSEUDO_ELEMENT_more_than_one.jpg">
+				<br>
+				<br>
+				<h3>14. PSUEDO ELEMENT SELECTION. will add styling to anything we mouse over and select.</h3>
+				<img src="images/14_PSEUDO_ELEMENT_selection.jpg">
+				<br>
+				<br>
+				<h3>15. PSUEDO ELEMENT BEFORE. We can add something before an element this could be a text or an attribute.</h3>
+				<img src="images/15_Before_Attribute.jpg">
+				<br>
+				<br>
+				<h3>16. We can do this for all sorts of attributes. For example Class. Or even attribures we have made up.</h3>
+				<img src="images/16_More_Before_Attribute.jpg">
+				<br>
+				<br>
+				<h3>17. We can even inser images as an atribute before using the URL.</h3>
+				<img src="images/17_Before_img_attribute.jpg">
+				<br>
+				<br>
+				<h3>18. As well as inserting before we can insert after.</h3>
+				<img src="images/19_after.jpg">
+				<br>
+				<br>
+			</section>
+		</body>
+
+
+	</html>

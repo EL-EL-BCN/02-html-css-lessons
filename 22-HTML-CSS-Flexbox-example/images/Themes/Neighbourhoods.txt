@@ -1,0 +1,50 @@
+01 La Eixample
+02 Las Ramblas
+03 Parc Guell & Horta
+04 Tibidabo
+05 Montjuic
+06 Gothic Centre
+07 Port of Barcelona
+08 Gracia 
+09 Barceloneta 
+10 Cuitadella and La Ribera
+11 El Born
+12 Sant Gervasi Area
+13 Poble Sec & Raval
+14 Glories Area
+15 Parc Natural Collserola
+16 Montserrat/Manresa Area
+17 Costa Brava
+18 Costa Dorada
+19 Girona & Figures Area
+20 Vilafranca Area
+21 The Pyrenees
+22 Valles Area & Mountains
+23 Port Forum, Besos & Poble Nou
+
+
+<li><a href="#">La Eixample</a></li>
+<li><a href="#">Las Ramblas</a></li>
+<li><a href="#">Parc Guell & Horta</a></li>
+<li><a href="#">Tibidabo</a></li>
+<li><a href="#">Montjuic</a></li>
+<li><a href="#">Gothic Centre</a></li>
+<li><a href="#">Port of Barcelona</a></li>
+<li><a href="#">Gracia</a></li>
+<li><a href="#">Barceloneta</a></li>
+<li><a href="#">Cuitadella and La Ribera</a></li>
+<li><a href="#">El Born</a></li>
+<li><a href="#">Sant Gervasi Area</a></li>
+<li><a href="#">Poble Sec & Raval</a></li>
+<li><a href="#">Glories Area</a></li>
+<li><a href="#">Parc Natural Collserola</a></li>
+<li><a href="#">Montserrat/Manresa Area</a></li>
+<li><a href="#">Montserrat/Manresa Area</a></li>
+<li><a href="#">Costa Brava</a></li>
+<li><a href="#">Costa Dorada</a></li>
+<li><a href="#">Girona & Figures Area</a></li>
+<li><a href="#">The Pyrenees</a></li>
+<li><a href="#">Valles Area & Mountains</a></li>
+<li><a href="#">Port Forum, Besos & Poble Nou</a></li>
+
+

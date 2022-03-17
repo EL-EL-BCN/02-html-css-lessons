@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>24 - HTML-CSS How to Create a Form</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<h1>24 - HTML-CSS How to Create a Form</h1>
+		<br>
+		<form action="contactform.php" method="post">
+			<input type="text" name="email" placeholder="email">
+			<div class="gender">
+			Male: <input type="radio" name="gender" value="male">
+			Female: <input type="radio" name="gender" value="female">
+			Other: <input type="radio" name="gender" value="other" Checked>
+			</div>
+			<input type="password" name="pwd" placeholder="password">
+			<textarea name="message" placeholder="Write your comments here"></textarea>
+			<select name="car1">
+				<option value="none">None</option>
+				<option value="car1">Ford</option>
+				<option value="car2">Audi</option>
+				<option value="car3">Mercedes</option>
+			</select>
+			<button type="submit" name="submit">Save</button>
+			<br>
+			<br>
+		</form>
+		<br>
+		<br>
+		<h3>01. A form is used on a webpage so that users can input data to a login system for example</h3>
+		<br>
+		<img src="images/01-form-example.jpg">
+		<img src="images/01- form_browser.jpg">
+		<br>
+		<h3>01a. We use input and set the type. Popular types are "text", "button", "checkbox", "date", "email" etc. See https://www.w3schools.com/html/html_form_input_types.asp Input type is obligatory. </h3>
+		<h3>01b. Name. We give the input type a name. it can be anything but I recommend only lowercase letters, no special characters and one word. if two woerds are needed then use an underscore to seperate the words as a space character is not permitted. Input name is oblo¡igatory. </h3>
+		<h3>01c. Next we have optional perameters. One example is placeholder. A placeholder is greyed out text that appears in the input box to guide the user to what they should write. this text is overwritten once the user starts to type in the box.</h3>
+		<h3>01d. Optional perameters. Value specifies a default value which will remain unless the user corrects it.</h3>
+		<br>
+		<br>
+		<h3>02. Another type of input is called radio.</h3>
+		<img src="images/02-Radio.jpg">
+		<img src="images/02-Radio-browser.jpg">
+		<h3>02a. Note that the "name" has to match in both input statements if this is a select one or the other type. I.e. we can only chose male or female and not both.</h3>
+		<img src="images/02b-checked.jpg">
+		<h3>02b. We can also define a default value to a radio input by setting one of them to checked.</h3>
+		<br>
+		<br>
+		<h3>03. A third type of input is called submit.</h3>
+		<img src="images/03-submit.jpg">
+		<h3>03a. This is a save button or a button that we can write PHP or other programming language to perform actions with the data that has been inputed. It is optional but advisory to set a name.</h3>
+		<br>
+		<br>
+		<h3>04. Now we need to tell the form what to do with the data once the submit button is clicked..</h3>
+		<img src="images/04-Form-Action.jpg">
+		<h3>03a. We do this by setting the form action. In this case I have told it to pass the information onto a file called contactform.php.</h3>
+		<h3>03b. Also we need to specify the method that the form passes on the information. GET is when the values in the inputs are passed via the URL. THis is not secure. POST is when the URL is left without adding the information and is considered more secure. If a form uses passwords or other sensative information then POST must be used. Note that GET has a limit of 3000 characters inside the URL whereas POST does not.</h3>
+		<br>
+		<br>
+		<h3>05. We can also create an input type called password.</h3>
+		<img src="images/05-password.jpg">
+		<h3>05a Note the the action method is set to get.</h3>
+		<img src="images/05a-GET.jpg">
+		<h3>05-1 The form action is passing the contents of the form to contactform.php via the URL.</h3>
+		<h3>05-2 The email address is also passed in plain text via the URL.</h3>
+		<h3>05-3 Gender is also passed in plain text via the URL.</h3>
+		<h3>05-4 although the input on the form for password shows the input text as asteriks, when it is passed via the URL it is in plain text. In this case I set the password to password.</h3>
+		<br>
+		<br>
+		<h3>06. when we change the action method to POST...</h3>
+		<img src="images/06-POST.jpg">
+		<h3>06a. the information is not passed in the URL.</h3>
+		<img src="images/06-POST_Browser.jpg">
+		<br>
+		<br>
+		<h3>07. We can also have a textarea on a form. This is a type of input but is used with "textarea" opening and closing tags.</h3>
+		<img src="images/07-textarea.jpg">
+		<h3>07a. A text area is used to enter text on multiple lines with enter and spaces etc. It can be used on blog input forms or email contact forms.</h3>
+		<img src="images/07-textarea-Browser.jpg">
+		<h3>07c. This input doe not need a type specified because it is already set to text by default. Without CSS styling the text area is expandable on the HTML form using the drag icon on the bottom right corner.</h3>
+		<br>
+		<br>
+		<h3>08. A select is used to have a drop down selection box on an input.</h3>
+		<img src="images/08_select.jpg">
+		<br>
+		<br>
+		<h3>09. A button tag is used to actually define a button.</h3>
+		<img src="images/09_button.jpg">
+		<h3>09a. Where type is submit and name is whatever whe choose.</h3>
+		<h3>09a. we can also add the text we would like to appear on the button between the opening and closing tag.</h3>
+		<img src="images/09_button_Browser.jpg">
+		<br>
+		<br>
+		<h3>10. At the moment the form looks ugly so we can add a stylesheet.</h3>
+		<img src="images/10_Basic_CSS.jpg">
+		<br>
+		<br>
+		<h3>11. We can use the resize to specify that we can only drag the textarea down. We can also apply a max-height of 100px to the textarea.</h3>
+		<img src="images/11_Resize.jpg">
+		<br>
+		<br>
+		<h3>12. We can remove the default outline then style the border of the inputs and textarea.</h3>
+		<img src="images/12_Outline.jpg">
+		<br>
+		<br>
+		<h3>13. We can give the inputs and textarea a soft red shadow when clicked in. We use an RGBA colour because a gives us the amount of fade, in this case 0.5.</h3>
+		<h3>13a. Also I have put the gender inputs inside a div class called gender to give them styling to appear on one line and have some margin.</h3>
+		<img src="images/13_focus.jpg">
+		<br>
+		<br>
+		<h3>14. We can also style the placeholder text inside the inputs. The placeholder is what is called psudo element so we use :: to style all psudo elements. Note that the syntax is different for microsoft edge and explorer so we need to add CSS for each of them.</h3>
+		<img src="images/14_placeholder.jpg">
+		<br>
+		<br>
+		<h3>15. I have added the select to the input and textarea css code. ALso I have styles the button and given it a float right.</h3>
+		<img src="images/15_button.jpg">
+		<br>
+		<br>
+		<br>
+	</body>
+</html>

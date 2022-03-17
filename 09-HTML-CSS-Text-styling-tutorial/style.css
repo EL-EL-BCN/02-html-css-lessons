@@ -1,0 +1,72 @@
+h1 {
+    /* if a browser does not support a particular 
+    font we can add a secondary font with a coma.
+    Note that if a font name has more than one 
+    word then we need to put it in double quotes*/
+    font-family: freestyle, "times new roman";
+    /* We can select the size of the font in pixels*/
+    font-size: 52px;
+    /* We can select the style of the font. 
+    Examples include italic, oblique etc. 
+    see https://www.w3schools.com/cssref/pr_font_font-style.asp*/
+    font-style: italic;
+    /* We can select the weight of the font. 
+    Examples include bold, bolder or a value from 100 to 900.  
+    see https://www.w3schools.com/cssref/pr_font_weight.asp*/
+    font-weight: 100;
+    /* We can set the text alignment. left, right, 
+    center, justify etc. 
+    see https://www.w3schools.com/cssref/pr_text_text-align.asp*/
+    text-align: center;
+    /* Text-decoration-line allows us to remove 
+    underlines on links or define where the line is . 
+    Examples include overline, underline, line-through etc. 
+    see https://www.w3schools.com/cssref/css3_pr_text-decoration-line.asp*/
+    text-decoration-line: line-through;
+    /* Text-transform allows us to capitalise every 
+    word or change everthing to uppercase*/
+    text-transform: uppercase;
+    /* we can specify colour as a RGB code using a website
+    like https://www.rapidtables.com/web/color/RGB_Color.html*/
+    color: rgb(81,79,161);
+
+
+
+}
+
+p {
+    font-family: freestyle, "times new roman";
+    font-size: 28px;
+    font-weight: 900;
+    /* Text-indent aloows us to indent 
+    the fist line of each paragraph. */
+    text-indent: 30px;
+    /* we can specify colour as a 6 digit hex value
+    using website https://htmlcolorcodes.com/*/
+    color: #4f3f4a;
+    /* we can specify line height within a paragraph*/
+    line-height: 58px;
+
+}
+
+
+a {
+    font-family: freestyle, "times new roman";
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 900;
+    /* Text-decoration allows us to remove 
+    underlines on links. */
+    text-decoration: none;
+    color:red;
+    /* we can specify colour as a RGBA code using a website
+    like https://www.rapidtables.com/web/color/RGB_Color.html
+    where A is the alpha or transparency*/
+    color: rgba(81,79,161, 0.5);
+    /* we can set letter or word spacing*/
+    letter-spacing: 10px;
+    word-spacing: 50px;
+
+}
+
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>13 - HTML-CSS How to create a menu bar</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="styles/style-menu-bar.css">
+	</head>
+	<body>
+		<nav>
+		<ul>
+				<li><a href="index.html" target="_blank">Home</a></li>
+				<li><a href="menu-bar.html" target="_blank">Create a menu</a></li>
+				<li><a href="wrapper.html" target="_blank">Create a Wrapper</a></li>
+				<li><a href="images.html" target="_blank">Insert Images</a></li>
+				<li><a href="videos.html" target="_blank">Create/embed HTML5 Videos</a></li>
+			</ul>
+		</nav>
+		<div class="wrapper">
+		<h1>13 - HTML-CSS How to create a menu bar </h1>
+		<p>In this lesson we are going to learn how to create a menu for our website.</p>
+		<p>1. We use an unordered list to do this.</p>
+
+		<img src="images/1_Unordered_list.jpg">
+		<br>
+		<br>
+		<p>2. But it looks ugly so we can create a style sheet to format the list.</p>
+
+		<img src="images/2_Unordered-list-style-sheet.jpg">
+		<br>
+		<br>
+		<p>3. We first remove the bullet point dots with list-style:none;</p>
+
+		<img src="images/3_list_style_none.jpg">
+		<br>
+		<br>
+		<p>4. At the moment we have some default padding nd margin around the list so we can modify the style sheet quikly to remove default styling. Note that we use zero without px or % because zero is the same as a percentage or as pixels.</p>
+
+		<img src="images/4_default_remove_padding_margin.jpg">
+		<br>
+		<br>
+		<p>5a. Next we want a horizontal menu rather than a vertical list. We medify the CSS code for the list items with display: inline-block.</p>
+		<p>5b. and we want to remove the underline for the anchored items with text-decoration: none.</p>
+
+		<img src="images/5_display_block_no_underline.jpg">
+		<br>
+		<br>
+		<p>6. Now if we zoom in we can see a small gap between the items of the menu that is not clickable. Next we want to get rod of that gap.</p>
+
+		<img src="images/6_Remove_Gaps.jpg">
+		<br>
+		<br>
+		<p>7. Next we are going to style the text within the menu. </p>
+
+		<img src="images/7_Style_font.jpg">
+		<br>
+		<br>
+		<p>8. Now we want to create some kind of box like a bar which we typically have on a website. We do this by adding Nav tags to the HTML and giving it style in CSS. We can also style the background with by giving the body CSS style.</p>
+
+		<img src="images/8_add_menu_style_Background_style.jpg">
+		<br>
+		<br>
+		<p>9a. And centre the text vertically inside the NAV bar by setting the line-height to the same height as the Nav.</p>
+		<p>9b. We can also add spacing between our menu items by adding padding to the anchors.</p>
+
+		<img src="images/9_Line-height_Padding.jpg">
+		<br>
+		<br>
+		
+		<p>10. At the moment we can only click of we hover over the text. But we would like to click it if the mouse is in the general area above or below of each menu item. We can change this by making the anchors dosplay as block.</p>
+		
+		<img src="images/10_Click_area.jpg">
+		<br>
+		<br>
+		<p>11. When I hover over each menu item I want them to change colour so I create a hover action in the CSS code.</p>
+		
+		<img src="images/11_Hover.jpg">
+		<br>
+		<br>
+		<p>12. lastly, we can indent the ul list with a margin-left: 120px to add space for a logo.</p>
+		
+		<img src="images/12_Indent_list.jpg">
+		<br>
+		<br>
+		</div>
+	</body>
+</html>
